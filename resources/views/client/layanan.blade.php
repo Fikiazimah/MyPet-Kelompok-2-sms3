@@ -35,14 +35,14 @@
                                 di Pet MyPet Hotel ini?</u></h4>
                         <div class="row mt-4">
                             <div class="col-6 text-white">
-                                <span><i class="fa fa-paw"></i> Fasilitas 1</span><br>
-                                <span><i class="fa fa-paw"></i> Fasilitas 2</span><br>
-                                <span><i class="fa fa-paw"></i> Fasilitas 3</span>
+                                <span><i class="fa fa-paw"></i> Free Antar Jemput</span><br>
+                                <span><i class="fa fa-paw"></i> Update Foto & Video</span><br>
+                                <span><i class="fa fa-paw"></i> Ruangan Full AC</span>
                             </div>
                             <div class="col-6 text-white">
-                                <span><i class="fa fa-paw"></i> Fasilitas 4</span><br>
-                                <span><i class="fa fa-paw"></i> Fasilitas 5</span><br>
-                                <span><i class="fa fa-paw"></i> Fasilitas 6</span>
+                                <span><i class="fa fa-paw"></i> Makan & Minum 3x Sehari</span><br>
+                                <span><i class="fa fa-paw"></i> Pembersihan Toilet Setiap Hari</span><br>
+                                <span><i class="fa fa-paw"></i> Tempat Bermain</span>
                             </div>
                         </div>
                     </div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('landingthemes/style.css') }}">
     <!-- Google Fonts Links For Icon -->
     <link rel="stylesheet"
-        href="https://png.pngtree.com/background/20230516/original/pngtree-cute-kitten-wallpapers-picture-image_2615776.jpg ed:opsz,wght,FILL,GRAD@24,400,0,0">
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlin ed:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 
 <body>

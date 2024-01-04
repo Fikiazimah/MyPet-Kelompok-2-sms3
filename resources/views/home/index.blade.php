@@ -19,7 +19,7 @@
     </style>
 
     <div class="px-4 py-5 text-center position-relative">
-        <img class="d-block mx-auto mb-4" src="{{ asset('storage/assets/mypet.png') }}" alt=""
+        <img class="d-block mx-auto mb-4" src="{{ asset('storage/mypet.png') }}" alt=""
             width="600px" height="500px">
         
         <div class="position-absolute top-50 start-50 translate-middle" style="margin-top: 250px;">

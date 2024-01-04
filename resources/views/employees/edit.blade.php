@@ -15,23 +15,24 @@
     <form action="/employees/perbarui/{{ $emp->id }}" method="POST"> 
         @method('put') 
         @csrf <div class="row">
-            <div class="form-group"> <strong>Nama Lengkap:</strong> <select name="text" name="nama_lengkap">
+            <div class="form-group"> <strong>Nama Lengkap:</strong> 
+                <select name="nama_lengkap" name="form-control">
                 <option value="" default>-- Choose --</option>
-                <option value="PUTRINURAINA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
-                <option value="AMANDAMULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
-                <option value="FIKIAZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
-                <option value="CELINEQUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
-                <option value="SITINURAMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>
+                <option value="PUTRI NURA INA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
+                <option value="AMANDA MULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
+                <option value="FIKI AZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
+                <option value="CELINE QUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
+                <option value="SITI NURAMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>
+                </select>
 
-                <div class="form-group"> <strong>Bagian:</strong> <select name="bagian" class="form-control">
+                <div class="form-group"> <strong>Bagian:</strong> 
+                    <select name="bagian" class="form-control">
+                    <option value="" default>-- Choose --</option>
                         <option value="GROOMER" {{ old('bagian', $emp->bagian) == 'GROOMER' ? 'selected' : '' }}>
                             GROOMER</option>
                         <option value="CLEANLINESS" {{ old('bagian', $emp->bagian) == 'CLEANLINESS' ? 'selected' : '' }}>
                             CLEANLINESS</option>
                         <option value="Admin" {{ old('bagian', $emp->bagian) == 'ADMIN' ? 'selected' : '' }}>ADMIN</option>
-
-                        
-
                             </select>
                 </div>
                 <div class="form-group"> <strong>Alamat:</strong> <input type="text" name="alamat"

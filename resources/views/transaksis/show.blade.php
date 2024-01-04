@@ -16,8 +16,12 @@
     <br>
     <div class="row">
         <div class="form-group">
+            <strong>Id Transaksi:</strong>
+            {{ $Trans->id_transaksi }}
+        </div>
+        <div class="form-group">
             <strong>Nama Hewan:</strong>
-            {{ $Trans->nama_hewan }}
+            {{ $Trans->hewan->nama_hewan }}
         </div>
         <div class="form-group">
             <strong>Nama Pemilik:</strong>

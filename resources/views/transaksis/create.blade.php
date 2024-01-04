@@ -17,10 +17,30 @@
     <form action="{{ route('transaksis.store') }}" method="POST">
         @csrf
         <div class="row">
-            
+            {{-- <div class="form-group">
+                <strong>Id Transaksi:</strong>
+                <input type="text" name="id_transaksi" class="form-control" value="{{ old('id_transaksi') }}">
+            </div>
+            <div class="form-group">
+                <strong>Id Karyawan:</strong>
+                <input type="text" name="id_karyawan" class="form-control" value="{{ old('id_karyawan') }}">
+            </div> --}}
             <div class="form-group">
                 <strong>Nama Hewan:</strong>
-                <input type="text" name="nama_hewan" class="form-control" value="{{ old('nama_hewan') }}">
+                <select name="hewan" id="hewan" class="form-control" required>
+                    <option value="">--Pilih Hewan--</option>
+                    <!-- variabel $hewan ini sebelumnya udah kita parsing di controller 
+                    Terus kenapa yang diambil cuman $hew->id karena kita mau pake relasi tabel transksi ke hewan
+                    untuk mencegah reundant dan data ambigu.
+                    Kalo relasine pake nama hewan bisa jadi rancu barangkali ada nama ica di dua jenis hewan berbeda
+
+                    Oke gak? okee jadi id kek primary key ya. YOOOiiiiii...
+                     -->
+                    @foreach($hewan as $hew)
+                        <option value="{{$hew->id}}" @if(old('hewan') == $hew->id) selected @endif>{{$hew->nama_hewan}}</option>
+                    @endforeach
+                </select>
+
             </div>
             <div class="form-group">
                 <strong>Nama Pemilik:</strong>
@@ -37,15 +57,16 @@
             </div>
             <div class="form-group">
                 <strong>Lama Penitipan:</strong>
-                <input type="text" name="lama_penitipan" id="lama" class="form-control" value="{{ old('lama_penitipan') }}">
+                <input type="text" name="lama_penitipan" class="form-control" value="{{ old('lama_penitipan') }}" id="lama">
             </div>
             <div class="form-group">
                 <strong>Harga Per Hari:</strong>
-                <input type="text" name="harga_perhari" id="harga_perhari" class="form-control" value="50.000" readonly>
+                <input type="text" name="harga_perhari" class="form-control" value="50.000" id="harga_perhari" readonly>
             </div>
             <div class="form-group">
                 <strong>Total:</strong>
-                <input type="text" name="total" id="total" class="form-control" value="{{ old('total') }}" readonly>
+                <input type="text" name="total" class="form-control" value="{{ old('total') }}" id="total" readonly>
+                
             </div>
             <div>
                 <br>
@@ -65,3 +86,4 @@
         });
     </script>
 @endsection
+

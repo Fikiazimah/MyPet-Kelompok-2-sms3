@@ -21,7 +21,7 @@
                     Dapatkan Harga Spesial
                 </h1>
 
-                <h4 class="mt-5"><u>mulai harga</u></h4>
+                <h4 class="mt-5"><u>harga mulai</u></h4>
                 <h3 class="text-danger">50 Ribu</h3>
                 <h4><u>per malam</u></h4>
             </div>

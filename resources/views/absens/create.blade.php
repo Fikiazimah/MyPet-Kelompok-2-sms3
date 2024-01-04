@@ -27,7 +27,7 @@
                     <option value="PUTRI NUR AINA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
                     <option value="AMANDA MULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
                     <option value="FIKI AZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
-                    <option value="CELINE QUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
+                    <option value="CELINE QUEENTEROSA THERIK" {{ old('nama_lengkap') == 'CELINEQUEENTEROSATHERIK' ? 'selected' : '' }}>CELINE QUEENTEROSA THERIK</option>
                     <option value="SITI NUR AMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>
                 </select>    
             </div>

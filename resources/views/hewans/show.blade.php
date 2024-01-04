@@ -41,6 +41,10 @@
             {{ $hewan->nama_pemilik }}
         </div>
         <div class="form-group">
+            <strong>No Telp Pemilik:</strong>
+            {{ $hewan->no_telp_pemilik }}
+        </div>
+        <div class="form-group">
             <strong>Jenis Kelamin:</strong>
             {{ $hewan->jenis_kelamin }}
         </div>

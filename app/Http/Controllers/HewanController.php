@@ -26,6 +26,7 @@ class HewanController extends Controller
             'ciri' => 'required',
             'foto' => 'required|image|mimes:png,jpg,jpeg',
             'nama_pemilik' => 'required',
+            'no_telp_pemilik' => 'required',
             'jenis_kelamin' => 'required',
         ], [
             'foto.required' => 'Silahkan masukkan foto',
@@ -45,6 +46,7 @@ class HewanController extends Controller
             'ciri' => $request->ciri,
             'foto' => $newName,
             'nama_pemilik' => $request->nama_pemilik,
+            'no_telp_pemilik'=> $request->no_telp_pemilik,
             'jenis_kelamin' => $request->jenis_kelamin,
         ]);
         $hewan->save();
@@ -69,6 +71,7 @@ class HewanController extends Controller
             'umur' => 'required',
             'ciri' => 'required',
             'nama_pemilik' => 'required',
+            'no_telp_pemilik' => 'required',
             'jenis_kelamin' => 'required',
         ]);
 
@@ -96,6 +99,7 @@ class HewanController extends Controller
 
         
         $hewan->nama_pemilik = $request->nama_pemilik;
+        $hewan->no_telp_pemilik = $request->no_telp_pemilik;
         $hewan->jenis_kelamin = $request->jenis_kelamin;
         $hewan->save();
 

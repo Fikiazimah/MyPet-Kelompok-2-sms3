@@ -44,6 +44,10 @@
                 <input type="text" name="nama_pemilik" class="form-control" value="{{ old('nama_pemilik') }}">
             </div>
             <div class="form-group">
+                <strong>No. Telp pemilik:</strong>
+                <input type="text" name="no_telp_pemilik" class="form-control" value="{{ old('no_telp_pemilik') }}">
+            </div>
+            <div class="form-group">
                 <strong>Jenis Kelamin:</strong>
                 <select name="jenis_kelamin" class="form-control">
                     <option value="" default>-- Choose --</option>

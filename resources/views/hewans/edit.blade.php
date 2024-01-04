@@ -51,6 +51,10 @@
                 <input type="text" name="nama_pemilik" class="form-control" value="{{ $hewan->nama_pemilik }}">
             </div>
             <div class="form-group">
+                <strong>No Telp Pemilik:</strong>
+                <input type="text" name="no_telp_pemilik" class="form-control" value="{{ $hewan->no_telp_pemilik }}">
+            </div>
+            <div class="form-group">
                 <strong>Jenis Kelamin:</strong>
                 <select name="jenis_kelamin" class="form-control">
                     <option value="" default>-- Choose --</option>

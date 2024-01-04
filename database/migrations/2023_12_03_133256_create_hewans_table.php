@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('umur');
             $table->string('ciri');
             $table->string('nama_pemilik',100);
+            $table->string('no_telp_pemilik',15);
             $table->string('jenis_kelamin');
             $table->timestamps();
         });

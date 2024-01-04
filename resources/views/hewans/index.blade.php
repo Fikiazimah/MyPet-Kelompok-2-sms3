@@ -31,6 +31,7 @@
                     <th style="background-color: #fdf8c6;">Ciri</th>
                     <th style="background-color: #fdf8c6;">Foto</th>
                     <th style="background-color: #fdf8c6;">Nama Pemilik</th>
+                    <th style="background-color: #fdf8c6;">No Telp Pemilik</th>
                     <th style="background-color: #fdf8c6;">Jenis Kelamin</th>
                     <th width="20%" style="background-color: #fdf8c6;"><i class="fas fa-cog">Action</i></th>
                 </tr>
@@ -48,6 +49,7 @@
                         @endif
                     </td>
                     <td>{{ $item->nama_pemilik }}</td>
+                    <td>{{ $item->no_telp_pemilik }}</td>
                     <td>{{ $item->jenis_kelamin }}</td>
                     <td>
                         <a href="{{ route('hewans.show', [$item->id]) }}" class="btn btn-info btn-sm">Detail</a>

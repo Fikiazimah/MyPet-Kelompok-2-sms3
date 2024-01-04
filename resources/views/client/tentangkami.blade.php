@@ -7,7 +7,7 @@
         </div>
         <div class="col-8">
             <h3>Kenapa Memilih Jasa Kami?</h3>
-            <h4 class="mt-4">karena kami merupakan hotels pet & grooming terbaik di indonesia. dan kami adalah pilihan yang tepat bagi anda yang ingin menitipkan atau merawat hewan peliharaan anda. sehingga anda tidak usah repot dan pusing lagi untuk menitikan anabul kesayangan anda. </h4>
+            <h4 class="mt-4">karena kami merupakan hotels pet & grooming terbaik di indonesia. dan kami adalah pilihan yang tepat bagi anda yang ingin menitipkan atau merawat hewan peliharaan anda. sehingga anda tidak usah repot dan pusing lagi untuk menitipkan anabul kesayangan anda. </h4>
         </div>
     </div>
     <div class="row mt-5">

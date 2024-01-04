@@ -2,7 +2,7 @@
 @section('main')
     <div class="container mt-5">
         <div class="row bg-primary">
-            <h4 class="text-light p-3 text-center">Ketika pergi liburan atau mudik  dalam waktu yang lama, memang tidak mungkin bagi kita untuk membawa Anabul kesayangan turut serta.Takutnya nih, bisa stres kalau kelamaan di jalan..Nah, di sisi lain meninggalkan mereka di rumah sendiri juga tidak membuat kita lebih tenang. Meski dititipkan kepada tetangga atau teman, belum tentu, kan, perawatan yang diberikan sesuai dengan standar pemiliknya.Oleh karena itu, pilihan terbaik supaya peliharaan kita tetap senang adalah menitipkannya di penitipan hewan</h4>
+            <h4 class="text-light p-3 text-center">Ketika pergi liburan atau mudik  dalam waktu yang lama, memang tidak mungkin bagi kita untuk membawa Anabul kesayangan turut serta.Takutnya nih, bisa stres kalau kelamaan di jalan. Nah, di sisi lain meninggalkan mereka di rumah sendiri juga tidak membuat kita lebih tenang. Meski dititipkan kepada tetangga atau teman, belum tentu kan, perawatan yang diberikan sesuai dengan standar pemiliknya. Oleh karena itu, pilihan terbaik supaya peliharaan kita tetap senang adalah menitipkannya di penitipan hewan</h4>
         </div>
 
         <div class="row bg-dark pb-3 pt-3">

@@ -15,7 +15,7 @@
 </div>
 
     <div class="box-header with-border">
-        <a href="{{ route('hewans.create') }}" class="btn btn-success btn-xs btnflat" style="background-color: #0000FF; color: #fff;">><i class="fa fa-plus-circle"></i>
+        <a href="{{ route('hewans.create') }}" class="btn btn-success btn-xs btnflat" style="background-color: #0000FF; color: #fff;"><i class="fa fa-plus-circle"></i>
             Tambah Data
         </a>
     </div>

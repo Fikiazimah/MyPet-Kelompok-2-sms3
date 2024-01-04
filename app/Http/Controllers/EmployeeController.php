@@ -24,16 +24,14 @@ class EmployeeController extends Controller
     public function simpan(Request $request)
     {
         $request->validate([
-            'idkaryawan' => 'required',
-            'namalengkap' => 'required|max:30',
+            'nama_lengkap' => 'required',
             'bagian' => 'required',
             'alamat' => 'required',
             'NoTelepon' => 'required',
         ]);
 
         $emp = Employee::create([
-            'id_karyawan'=>$request->idkaryawan,
-            'nama_lengkap'=>$request->namalengkap,
+            'nama_lengkap'=>$request->nama_lengkap,
             'bagian'=>$request->bagian,
             'alamat'=>$request->alamat,
             'NoTelepon'=>$request->NoTelepon,
@@ -53,8 +51,7 @@ class EmployeeController extends Controller
     public function perbarui(Request $request, $id)
     {
         $request->validate([
-            'id_karyawan' => 'required',
-            'nama_lengkap' => 'required|max:30',
+            'nama_lengkap' => 'required',
             'bagian' => 'required',
             'alamat' => 'required',
             'NoTelepon' => 'required',

@@ -8,7 +8,7 @@
         </div>
     </div>
 </div 
-@section('content')>
+@section('content')
 <div class="box-header with-border" style="margin-bottom: 10px;">
     <a href="home" class="btn btn-success btn-xs btn-flat"style="background-color: #ff4646; color: #fff;"><i class="fa fa-plus-circle"></i>
         << Kembali </a>
@@ -25,7 +25,6 @@
             <thead>
                 <tr>
                     <th width="5%" style="background-color: #fdf8c6;">No</th>
-                    <th style="background-color: #fdf8c6;">Id Karyawan</th>
                     <th style="background-color: #fdf8c6;">Nama Lengkap</th>
                     <th style="background-color: #fdf8c6;">Bagian</th>
                     <th style="background-color: #fdf8c6;">Alamat</th>
@@ -36,7 +35,6 @@
             @foreach ($emp as $item)
                 <tr>
                     <td>{{$loop->iteration }}</td>
-                    <td>{{ $item->id_karyawan }}</td>
                     <td>{{ $item->nama_lengkap }}</td>
                     <td>{{ $item->bagian }}</td>
                     <td>{{ $item->alamat }}</td>

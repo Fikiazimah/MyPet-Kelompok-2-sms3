@@ -18,6 +18,9 @@
     <br>
     <div class="row" style="border-radius: 5px;">
         <div class="form-group">
+            <strong>Tanggal:</strong>
+            {{ $absen->tanggal }}
+        <div class="form-group">
             <strong>Nama Karyawan:</strong>
             {{ $absen->nama_karyawan }}
         </div>

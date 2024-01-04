@@ -18,8 +18,18 @@
         @csrf
         <div class="row">
             <div class="form-group">
+                <strong>Tanggal:</strong>
+                <input type="date" name="tanggal" class="form-control" value="{{ old('tanggal')}}">
+            <div class="form-group">
                 <strong>Nama Karyawan:</strong>
-                <input type="text" name="nama_karyawan" class="form-control" value="{{ old('nama_karyawan') }}">
+                <select name="nama_karyawan" class="form-control">
+                    <option value="" default>-- Choose --</option>
+                    <option value="PUTRI NUR AINA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
+                    <option value="AMANDA MULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
+                    <option value="FIKI AZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
+                    <option value="CELINE QUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
+                    <option value="SITI NUR AMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>
+                </select>    
             </div>
             <div class="form-group">
                 <strong>Bagian:</strong>
@@ -35,10 +45,6 @@
                 <div>
                     <input type="radio" id="hadir" name="keterangan" value="Hadir" autocomplete="off">
                     <label for="hadir">Hadir</label>
-                </div>
-                <div>
-                    <input type="radio" id="tidak_hadir" name="keterangan" value="Tidak hadir" autocomplete="off">
-                    <label for="tidak_hadir">Tidak hadir</label>
                 </div>
             <div>
                 <br>

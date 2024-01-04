@@ -15,10 +15,13 @@
     <form action="/employees/perbarui/{{ $emp->id }}" method="POST"> 
         @method('put') 
         @csrf <div class="row">
-            <div class="form-group"> <strong>Id Karyawan:</strong> <input type="text" name="id_karyawan"
-                class="form-control" value="{{ $emp->id_karyawan }}"> </div>
-            <div class="form-group"> <strong>Nama Lengkap:</strong> <input type="text" name="nama_lengkap"
-                    class="form-control" value="{{ $emp->nama_lengkap }}">
+            <div class="form-group"> <strong>Nama Lengkap:</strong> <select name="text" name="nama_lengkap">
+                <option value="" default>-- Choose --</option>
+                <option value="PUTRINURAINA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
+                <option value="AMANDAMULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
+                <option value="FIKIAZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
+                <option value="CELINEQUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
+                <option value="SITINURAMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>
 
                 <div class="form-group"> <strong>Bagian:</strong> <select name="bagian" class="form-control">
                         <option value="GROOMER" {{ old('bagian', $emp->bagian) == 'GROOMER' ? 'selected' : '' }}>

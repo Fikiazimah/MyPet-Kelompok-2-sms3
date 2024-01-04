@@ -20,11 +20,13 @@ class AbsenController extends Controller
     {
         $request->validate([
             'nama_karyawan' => 'required',
+            'tanggal' => 'required',
             'bagian' => 'required',
             'keterangan' => 'required',
         ]);
         $absen = Absen::create([
             'nama_karyawan' => $request->nama_karyawan,
+            'tanggal' => $request->tanggal,
             'bagian' => $request->bagian,
             'keterangan' => $request->keterangan,
         ]);
@@ -44,6 +46,7 @@ class AbsenController extends Controller
     {
         $request->validate([
             'nama_karyawan' => 'required',
+            'tanggal' => 'required',
             'bagian' => 'required',
             'keterangan' => 'required',
         ]);

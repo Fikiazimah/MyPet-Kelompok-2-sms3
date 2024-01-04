@@ -16,14 +16,6 @@
     <br>
     <div class="row">
         <div class="form-group">
-            <strong>Id Transaksi:</strong>
-            {{ $Trans->id_transaksi }}
-        </div>
-        <div class="form-group">
-            <strong>Id Karyawan:</strong>
-            {{ $Trans->id_karyawan }}
-        </div>
-        <div class="form-group">
             <strong>Nama Hewan:</strong>
             {{ $Trans->nama_hewan }}
         </div>

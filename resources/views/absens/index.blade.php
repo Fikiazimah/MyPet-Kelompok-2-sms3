@@ -29,6 +29,7 @@
             <thead>
                 <tr>
                     <th width="5%" style="background-color: #fdf8c6;">No</th>
+                    <th style="background-color: #fdf8c6;">Tanggal</th>
                     <th style="background-color: #fdf8c6;">Nama Lengkap</th>
                     <th style="background-color: #fdf8c6;">Bagian</th>
                     <th style="background-color: #fdf8c6;">Keterangan</th>
@@ -38,9 +39,10 @@
             @foreach ($absen as $item)
                 <tr>
                     <td>{{ ++$i }}</td>
+                    <td>{{ $item->tanggal }}</td>
                     <td>{{ $item->nama_karyawan }}</td>
                     <td>{{ $item->bagian }}</td>
-                    <td>{{ $item->keterangan }}</td>
+                    <td><span style="background-color: #4cd470; "class="btn btn-primary">{{ $item->keterangan }}</span></td>
                     <td>
                         <a href="{{ route('absens.show', [$item->id]) }}" class="btn btn-info btn-sm">Detail</a>
                         <a href="{{ route('absens.edit', [$item->id]) }}" class="btn btn-primary btn-sm">Edit</a>

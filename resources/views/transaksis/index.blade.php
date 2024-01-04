@@ -25,8 +25,6 @@
             <thead>
                 <tr>
                     <th width="5%" style="background-color: #fdf8c6;">No</th>
-                    <th style="background-color: #fdf8c6;">Id Transaksi</th>
-                    <th style="background-color: #fdf8c6;">Id Karyawan</th>
                     <th style="background-color: #fdf8c6;">Nama Hewan</th>
                     <th style="background-color: #fdf8c6;">Nama Pemilik</th>
                     <th style="background-color: #fdf8c6;">Tanggal Penitipan</th>
@@ -40,8 +38,6 @@
             @foreach ($Trans as $item)
                 <tr>
                     <td>{{ ++$i }}</td>
-                    <td>{{ $item->id_transaksi}}</td>
-                    <td>{{ $item->id_karyawan}}</td>
                     <td>{{ $item->nama_hewan}}</td>
                     <td>{{ $item->nama_pemilik}}</td>
                     <td>{{ $item->tanggal_penitipan}}</td>

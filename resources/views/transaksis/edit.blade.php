@@ -20,14 +20,6 @@
         @csrf
         <div class="row">
             <div class="form-group">
-                <strong>Id Transaksi:</strong>
-                <input type="text" name="id_transaksi" class="form-control" value="{{ $Trans->id_transaksi }}">
-            </div>
-            <div class="form-group">
-                <strong>Id Karyawan:</strong>
-                <input type="text" name="id_karyawan" class="form-control" value="{{ $Trans->id_karyawan }}">
-            </div>
-            <div class="form-group">
                 <strong>Nama Hewan:</strong>
                 {{-- input text nip dibuat hidden untuk proses post request di controller --}}
                 <input type="text" name="nama_hewan" class="form-control" value="{{ $Trans->nama_hewan }}" hidden>

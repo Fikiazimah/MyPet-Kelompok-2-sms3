@@ -18,12 +18,15 @@
         @csrf
         <div class="row">
             <div class="form-group">
-                <strong>Id Karyawan:</strong>
-                <input type="text" name="idkaryawan" class="form-control" value="{{ old('idkaryawan') }}">
-            </div>
-            <div class="form-group">
                 <strong>Nama Lengkap:</strong>
-                <input type="text" name="namalengkap" class="form-control" value="{{ old('namalengkap') }}">
+                <select name="nama_lengkap" class="form-control">
+                    <option value="" default>-- Choose --</option>
+                    <option value="PUTRI NUR AINA" {{ old('nama_lengkap') == 'PUTRINURAINA' ? 'selected' : '' }}>PUTRI NUR AINA</option>
+                    <option value="AMANDA MULYASARI" {{ old('nama_lengkap') == 'AMANDAMULYASARI' ? 'selected': '' }}>AMANDA MULYASARI</option>
+                    <option value="FIKI AZIMAH" {{ old('nama_lengkap') == 'FIKIAZIMAH' ? 'selected' : '' }}>FIKI AZIMAH</option>
+                    <option value="CELINE QUEENTEROSA" {{ old('nama_lengkap') == 'CELINEQUEENTEROSA' ? 'selected' : '' }}>CELINE QUEENTEROSA</option>
+                    <option value="SITI NUR AMALA" {{ old('nama_lengkap') == 'SITINURAMALA' ? 'selected' : '' }}>SITI NUR AMALA</option>     
+                </select>
             </div>
             <div class="form-group">
                 <strong>Bagian:</strong>

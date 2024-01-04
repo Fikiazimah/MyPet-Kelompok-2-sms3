@@ -17,14 +17,7 @@
     <form action="{{ route('transaksis.store') }}" method="POST">
         @csrf
         <div class="row">
-            <div class="form-group">
-                <strong>Id Transaksi:</strong>
-                <input type="text" name="id_transaksi" class="form-control" value="{{ old('id_transaksi') }}">
-            </div>
-            <div class="form-group">
-                <strong>Id Karyawan:</strong>
-                <input type="text" name="id_karyawan" class="form-control" value="{{ old('id_karyawan') }}">
-            </div>
+            
             <div class="form-group">
                 <strong>Nama Hewan:</strong>
                 <input type="text" name="nama_hewan" class="form-control" value="{{ old('nama_hewan') }}">
@@ -44,15 +37,15 @@
             </div>
             <div class="form-group">
                 <strong>Lama Penitipan:</strong>
-                <input type="text" name="lama_penitipan" class="form-control" value="{{ old('lama_penitipan') }}">
+                <input type="text" name="lama_penitipan" id="lama" class="form-control" value="{{ old('lama_penitipan') }}">
             </div>
             <div class="form-group">
                 <strong>Harga Per Hari:</strong>
-                <input type="text" name="harga_perhari" class="form-control" value="{{ old('harga_perhari') }}">
+                <input type="text" name="harga_perhari" id="harga_perhari" class="form-control" value="50.000" readonly>
             </div>
             <div class="form-group">
                 <strong>Total:</strong>
-                <input type="text" name="total" class="form-control" value="{{ old('total') }}">
+                <input type="text" name="total" id="total" class="form-control" value="{{ old('total') }}" readonly>
             </div>
             <div>
                 <br>
@@ -60,4 +53,15 @@
             </div>
         </div>
     </form>
+    <script>
+        $(document).ready(function() {
+            $("#lama, #harga_perhari").on("keyup", function() {
+                var lamaPenitipan = parseFloat($("#lama").val()) || 0;
+                var hargaPerHari = parseFloat($("#harga_perhari").val()) || 0;
+    
+                var total = lamaPenitipan * hargaPerHari;
+                $("#total").val(total.toFixed(3));
+            });
+        });
+    </script>
 @endsection

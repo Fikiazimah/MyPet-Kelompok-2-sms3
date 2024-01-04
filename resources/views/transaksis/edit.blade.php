@@ -19,12 +19,18 @@
         @method('put')
         @csrf
         <div class="row">
+            
             <div class="form-group">
                 <strong>Nama Hewan:</strong>
-                {{-- input text nip dibuat hidden untuk proses post request di controller --}}
-                <input type="text" name="nama_hewan" class="form-control" value="{{ $Trans->nama_hewan }}" hidden>
-                {{-- input text yang hanya untuk tampilan saja, disabled dan tanpa nama --}}
-                <input type="text" class="form-control" value="{{ $Trans->nama_hewan }}">
+                <select name="id_hewan" id="id_hewan" class="form-control" required>
+                    <option value="">--Pilih Hewan--</option>
+                    <!--bisane disini name="nama_hewan" soale di method updatenya pake $request->all() biar samaan sama kolom di tabelnya
+                     -->
+                    @foreach($hewan as $hew)
+                        <option value="{{$hew->id}}" @if($Trans->id_hewan == $hew->id) selected @endif>{{$hew->nama_hewan}}</option>
+                    @endforeach
+                </select>
+
             </div>
             <div class="form-group">
                 <strong>Nama Pemilik:</strong>

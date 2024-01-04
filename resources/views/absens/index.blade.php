@@ -1,5 +1,6 @@
 @extends('components.layout')
 @section('title', 'Absen')
+<!-- Celine melakukan revisi pada laptop Fiki karena terjadi error laptop tidak mau menyala saat kerja kelompok -->
 <div class="container-fluid">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <div class="row mb-2">
@@ -22,7 +23,7 @@
             Tambah Data
         </a>
     </div>
-
+    
     <br>
     <div class="box-body table-responsive">
         <table class="table-stiped table-bordered table">
